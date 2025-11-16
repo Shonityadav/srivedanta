@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vividha Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="vividha.jpg" alt="Vividha Logo">
+    </div>
+    <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="books.html">E-books</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script >
+    window.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.navbar ul');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+      menuBtn.classList.toggle('open');
+    });
+  }
+});
+  </script>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <!-- <img src="background.jpg" alt="Background Image"> -->
+    <h2>Welcome to Shri Vedant Publication 🎉</h2>
+    <p>Fun stories, learning games, and quizzes for kids!</p>
+  </div>
+
+  <!-- Our Features Section -->
+  <div class="section">
+    <h2>🌟 Our Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🧠 Test Generator</h3>
+        <p>Create exciting quizzes and practice tests to make learning fun.</p>
+      </div>
+      <div class="card">
+        <h3>📖 Ebooks</h3>
+        <p>Download colorful storybooks and learning materials anytime, anywhere.</p>
+      </div>
+      <div class="card">
+        <h3>✍️ Teacher Manual</h3>
+        <p>Printable worksheets and guides to help kids practice offline.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Books Section (Slider) -->
+<div class="section books-section">
+  <h2>📖 Our Books</h2>
+  <p class="section-subtitle">Fun, colorful, and engaging books for kids of all ages!</p>
+
+  <div class="books-slider">
+    <div class="books-slider-track">
+      <!-- Repeat book cards twice for smooth looping -->
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10523365-L.jpg" alt="Book 1"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10456771-L.jpg" alt="Book 2"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="Book 3"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/11153258-L.jpg" alt="Book 4"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/9874590-L.jpg" alt="Book 5"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/9252451-L.jpg" alt="Book 6"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Book 7"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10150472-L.jpg" alt="Book 8"></div>
+
+      <!-- Repeat again -->
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10523365-L.jpg" alt="Book 1"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10456771-L.jpg" alt="Book 2"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10521270-L.jpg" alt="Book 3"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/11153258-L.jpg" alt="Book 4"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/9874590-L.jpg" alt="Book 5"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/9252451-L.jpg" alt="Book 6"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Book 7"></div>
+      <div class="book-card"><img src="https://covers.openlibrary.org/b/id/10150472-L.jpg" alt="Book 8"></div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="books.html" class="cta-button">✨ Explore More Books</a>
+  </div>
+</div>
+
+
+  <!-- Fun Learning Games Section -->
+  <div class="section">
+    <h2>🎮 Fun Learning Games</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🔢 Math Puzzle</h3>
+        <p>Boost number skills with exciting puzzles.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Word Builder</h3>
+        <p>Create words and improve vocabulary.</p>
+      </div>
+      <div class="card">
+        <h3>🎨 Color Match</h3>
+        <p>Match colors and learn shades playfully.</p>
+      </div>
+      <div class="card">
+        <h3>🧩 Quiz Time</h3>
+        <p>Take fun quizzes and test your memory!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insights Section -->
+  <div class="section insights-section">
+    <h2>💡 Insights & Wisdom</h2>
+    <div class="insights-grid">
+
+      <!-- Insight Card: Albert Einstein -->
+      <div class="insight-card">
+        <div class="insight-left">        
+          <div class="insight-image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Albert Einstein" class="insight-image">
+          </div>
+          <div class="insight-description-panel">
+            <p>A German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. He developed the theory of relativity.</p>
+          </div>
+        </div>
+        <div class="insight-content">
+          <h3>Albert Einstein</h3>
+          <p class="insight-quote">"Education is not the learning of facts, but the training of the mind to think."</p>
+        </div>
+      </div>
+      <!-- Insight Card: Dr. A.P.J. Abdul Kalam -->
+      <div class="insight-card reverse">
+        <div class="insight-left"> 
+          <div class="insight-image-container">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.2dG6t8_--38pKK6s2R4n_AHaHa?pid=Api&P=0&h=220" alt="Dr. A.P.J. Abdul Kalam" class="insight-image">
+          </div>
+          <div class="insight-description-panel">
+            <p>An Indian aerospace scientist and statesman, also known as the "Missile Man of India" for his work on missile technology.</p>
+          </div>
+        </div>
+        <div class="insight-content">
+          <h3>Dr. A.P.J. Abdul Kalam</h3>
+          <p class="insight-quote">"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Newsletter -->
+  <div class="newsletter">
+    <h2>📬 Subscribe for Updates</h2>
+    <p>Get new stories and quizzes delivered to your inbox!</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2>📚 Vividha</h2>
+        <p>Fun & interactive platform designed for children. Ebooks, test generators & more.</p>
+      </div>
+      <div class="footer-column">
+        <h2>✨ Our Features</h2>
+        <ul>
+          <li>✅ Test Generator</li>
+          <li>✅ eBooks Library</li>
+          <li>✅ Manual Guides</li>
+          <li>✅ Fun Quizzes</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>📞 Contact Us</h2>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> support@Vividha.com</p>
+        <p><strong>Address:</strong> Rainbow Street, Meerut, India</p>
+      </div>
+      <div class="footer-column">
+        <h2>🌍 Follow Us</h2>
+        <div class="social-links">
+          <a href="#">📘 Facebook</a>
+          <a href="#">🐦 Twitter</a>
+          <a href="#">📸 Instagram</a>
+          <a href="#">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vividha | Made with ❤️ for Kids</p>
+    </div>
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.books-slider');
+  if (!slider) return;
+  const track = slider.querySelector('.books-slider-track');
+  if (!track) return;
+
+  // Duplicate children once to create a seamless loop (only if not duplicated)
+  if (!track.dataset.duplicated) {
+    const items = Array.from(track.children);
+    items.forEach(node => track.appendChild(node.cloneNode(true)));
+    track.dataset.duplicated = 'true';
+  }
+
+  // speed in pixels per second (adjust to taste: increase -> faster)
+  const SPEED_PX_PER_SEC = 90;
+
+  let resizeTimer;
+  function setAnimationDuration() {
+    // measure total width of all children
+    const totalWidth = Array.from(track.children).reduce((acc, el) => {
+      const r = el.getBoundingClientRect();
+      return acc + r.width;
+    }, 0);
+
+    // half of the duplicated track is one full cycle (original set)
+    const halfWidth = totalWidth / 2;
+    // compute duration (seconds)
+    let duration = halfWidth / SPEED_PX_PER_SEC;
+    // clamp so it's not too short
+    if (duration < 6) duration = 6;
+    // apply as CSS variable
+    track.style.setProperty('--books-duration', duration + 's');
+  }
+
+  // initial set (give layout time)
+  setTimeout(setAnimationDuration, 60);
+
+  // recompute on resize (debounced)
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(setAnimationDuration, 120);
+  });
+
+  // pause/resume handlers (desktop hover already handled by CSS)
+  const pause = () => track.style.animationPlayState = 'paused';
+  const play  = () => track.style.animationPlayState = 'running';
+
+  slider.addEventListener('mouseenter', pause);
+  slider.addEventListener('mouseleave', play);
+
+  // Mobile touch: pause on touchstart, resume on touchend/cancel
+  slider.addEventListener('touchstart', pause, {passive: true});
+  slider.addEventListener('touchend', play);
+  slider.addEventListener('touchcancel', play);
+});
+</script>
+
+</body>
+
+</html>
